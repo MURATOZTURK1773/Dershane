@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(213, 242, 96);
+}
+
+h1,
+h3 {
+  color: red;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 70px;
+}
+
+.pictures img {
+  margin: 70px 70px;
+}
+
+footer {
+  text-align: center;
+  font-size: larger;
+}
