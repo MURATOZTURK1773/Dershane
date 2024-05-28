@@ -4,7 +4,7 @@ window.onload = function () {
     let currentIndex = 0;
 
     function showNextImage() {
-      images[currentIndex].classList.remove("active", "rotate");
+      images[currentIndex].classList.remove("active");
       images[currentIndex].style.display = "none";
 
       currentIndex = (currentIndex + 1) % images.length;
@@ -16,8 +16,6 @@ window.onload = function () {
     function rotateImages() {
       let previousIndex = (currentIndex - 1 + images.length) % images.length;
       images[previousIndex].classList.remove("rotate");
-
-      images[currentIndex].classList.add("rotate");
     }
 
     showNextImage();
