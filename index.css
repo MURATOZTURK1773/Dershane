@@ -1,5 +1,10 @@
 body {
-  background-color: rgb(213, 242, 96);
+  background-color: rgb(235, 242, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 h1,
@@ -16,7 +21,74 @@ h1 {
   margin: 70px 140px;
 }
 
-footer {
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  margin: 15px 40px;
+}
+
+.header-right {
+  display: flex;
+  gap: 7rem;
+  margin-top: 30px;
+}
+
+.header-hakkimizda select {
+  border: 0px;
+  background-color: transparent;
+  font-size: 22px;
+}
+
+.header-iletisim a,
+.pictures a {
+  text-decoration: none;
+}
+
+.content img {
   text-align: center;
-  font-size: larger;
+  width: 1200px;
+  height: 700px;
+  z-index: 1;
+  position: absolute;
+  display: none;
+}
+
+.content img.active {
+  display: block;
+  padding-bottom: 100px;
+}
+
+/* pictures.html */
+
+.pictures {
+  text-align: center;
+}
+
+.pictures h3 {
+  text-align: center;
+  color: #000;
+}
+
+.pictures img {
+  text-align: center;
+  width: 1200px;
+  height: 700px;
+}
+
+/* iletisim.html */
+
+div {
+  font-size: 26px;
+  color: blueviolet;
 }
