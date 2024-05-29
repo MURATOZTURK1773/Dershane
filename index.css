@@ -69,16 +69,6 @@ h1 {
   text-decoration: none;
 }
 
-/* .content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .content {
   position: relative;
   width: 100%;
@@ -157,4 +147,164 @@ div {
 .iletisim-container img {
   width: 800px;
   height: 600px;
+}
+
+/* mobile responsive */
+
+/* Media query for tablets (up to 768px) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: max-content;
+    padding: 60px;
+    margin: 0 149px;
+  }
+
+  .header-left,
+  .header-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .header-right {
+    gap: 1rem;
+  }
+
+  .container {
+    top: 5%;
+    margin: 15px 20px;
+    bottom: 100px;
+  }
+
+  .content {
+    margin: 0px 100px;
+    width: initial;
+  }
+
+  .content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pictures img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .iletisim-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media query for mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  h1 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    padding: 0 35px;
+    width: max-content;
+    margin: 0 50px;
+  }
+
+  .header-img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .header-hakkimizda select {
+    font-size: 18px;
+  }
+
+  .header-iletisim select,
+  .header-iletisim a {
+    font-size: 20px;
+  }
+
+  .container {
+    top: 5%;
+    margin: 10px 10px;
+  }
+
+  .content {
+    margin: 0 25px;
+    width: auto;
+  }
+
+  .content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pictures img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .iletisim-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media query for small mobile devices (up to 320px) */
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .header-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .header-hakkimizda select {
+    font-size: 16px;
+  }
+
+  .header-iletisim select,
+  .header-iletisim a {
+    font-size: 18px;
+  }
+
+  .container {
+    top: 5%;
+    margin: 5px 5px;
+  }
+
+  .content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pictures img {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+  }
+
+  .iletisim-container img {
+    width: 100%;
+    height: auto;
+  }
 }
